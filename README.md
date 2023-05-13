@@ -1,7 +1,7 @@
 # JS Movie Guide
 
 
-JS Movie Guide is a simple web application built with JavaScript, HTML, and CSS that allows users to search for movies and view their details. It uses the Open Movie Database (OMDb) API to fetch movie data and display it in an organized and user-friendly manner.
+JS Movie Guide is a simple web application built with JavaScript, HTML, and CSS that allows users to search for movies and view their details. It uses the Open Movie Database (OMDb) API & The Movie Database (TMDb) API to fetch movie data and display it in an organized and user-friendly manner.
 
 ## Features
 
