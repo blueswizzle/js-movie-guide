@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #212529;
+    min-height: 100vh;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    background: #000;
+    padding:1rem;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    background-color: #2faad1;
+    color: white;
+    border-radius: 10px;
+    padding: 0.2rem;
+}
+.logo > h1{
+    letter-spacing: 0.6px;
+}
+.links{
+    color:white;
+    font-size: 20px;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+ul li{
+    text-decoration: none;
+    list-style: none;
+    margin-right: 5rem;
+    transition: 0.3s;
+}
+ul li:hover{
+    transform: scale(2);
+    cursor: pointer;
+}
+input{
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgba(255,255,255,.2);
+    color: gray;
+    transition: 0.2s;
+    width:300px;
+    max-width: 300px;
+    outline: none;
+    margin-right: 2rem;
+}
+
+input:hover{
+    background-color: white;
+}
+
+main{
+    margin-top: 3rem;
+    margin-left: 2.5rem;
+}
+.card{
+    color: white;
+    width:200px;
+    height:auto;
+    margin-bottom: 1.2rem;
+    margin-right: 1.2rem;
+    position: relative;
+}
+.card-image > img{
+    width: 100%;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+.card-image > img:hover{
+    opacity: 50%;
+    cursor: pointer;
+}
+.movie-title{
+    margin-bottom: 0.5rem;
+    
+    overflow: hidden;
+}
+.movie-title > h1{
+    font-size: 1rem;
+    letter-spacing: 1.1px;
+    font-weight: 400;
+}
+
+
+.movie-year-runtime{
+    color:darkgray;
+}
+.dot{
+    width: 3px;
+    height: 3px;
+    vertical-align: 2px;
+    border-radius: 50%;
+    display: inline-block;
+    background: #d5d5d5;
+    content: "";
+    margin: 0px 3px;
+}
+
+#main-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logo-home-view{
+    margin-bottom: 1.2rem;
+}
+.title{
+    font-size: 13px;
+}
+.title, .about{
+    margin-bottom: 1.2rem;
+}
+.about{
+    text-align: center;
+}
+
+.error{
+    text-align: center;
+    display: none;
+    color: white;
+}
+.home-view{
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+footer{
+    text-align: center;
+    background-color: #000;
+    color:darkgray;
+    padding: 1rem;
+    margin-top: auto;
+}
+footer > h1{
+    font-size: 1rem;
+    font-weight: 400;
+
+}
+
+
+.movie-info{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.movie-info-top{
+    display: flex;
+    justify-content: space-evenly;
+}
+.movie-image{
+    max-width: 400px;
+    min-width: 400px;
+    height: auto;
+}
+.movie-image img{
+    width: 100%;
+    height: auto;
+}
+
+.movie-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.movie-details-title,
+.movie-details-rating,
+.movie-details-release-rating{
+    margin-bottom: 1rem;
+}
+
+.movie-details-rating{
+    color: goldenrod;
+    letter-spacing: 2px;
+}
+
+.movie-details-release-rating span{
+    margin-right: 1.5rem;
+    color:gray;
+}
+
+.movie-details-creator{
+    text-align: center;
+    margin-top: 1rem;
+}
+.movie-details-creator p{
+    margin-bottom: 1rem;
+}
+.movie-details-genre{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+.movie-details-genre div{
+    border: 0.5px solid black;
+    padding: 1rem;
+    border-radius: 5px;
+    width: 140px;
+    margin-right: 2rem;
+    margin-bottom: 0.85rem;
+    text-align: center;
+    background-color: rgba(218, 165, 32, 0.8);
+    outline: none;
+}
+.movie-plot-and-cast{
+    color: lightgray;
+}
+
+.plot, .cast{
+    margin-bottom: 2rem;
+    padding-left: 1rem;
+}
+.plot{
+    margin-right: 1rem;
+}
+.go-back {
+  appearance: none;
+  background-color: white;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: black;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 3rem 0rem;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  will-change: transform;
+}
+
+.go-back:disabled {
+  pointer-events: none;
+}
+
+.go-back:hover {
+  color: white;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.go-back:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.hide{
+    display: none;
+}
+@media screen and (max-width:1000px){
+    .links{
+        font-size: 15px;
+    }
+    ul li{
+        margin-right: 3rem;
+    }
+    input{
+        width: 250px;
+    }
+    .movie-info-top{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+@media screen and (max-width:920px){
+    .logo{
+        margin-bottom: 1.2rem;
+        padding: 0.1rem;
+    }
+    ul li{
+        margin-bottom: 1.2rem;
+        margin-right: 0rem;
+    }
+    input{
+        width: 200px;
+        margin: 0rem;
+    }
+    header{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .links{
+        flex-direction: column;
+        align-items: center;
+    }
+    .about{
+        font-size: 15px;
+    }
+    .card{
+        width: 150px;
+    }
+}
+
+@media screen and (max-width:700px){
+    .movie-image{
+        min-width: 200px;
+        width:200px;
+    }
+   .movie-details-title,
+   .movie-details-rating{
+    font-size: 25px;
+    text-align: center;
+   }
+   .movie-details-genre div{
+    width:auto;
+    padding: 0.6rem;
+    font-size: 18px;
+    margin-right: 1.5rem;
+   }
+   .plot{
+    margin-top: 1.5rem;
+   }
+   .plot-heading, .cast h1{
+    font-size: 25px;
+    padding: 0rem 1.2rem;
+   }
+}
+
+@media screen and (max-width:400px){
+    .card{
+        width: 120px;
+    }
+}
